@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './components/home-page/home-page';
 import QuestionsPage from './components/questions/questions-page';
 import ResultPage from './components/results/results-page';
@@ -9,7 +9,7 @@ import ResultPage from './components/results/results-page';
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
+            <HashRouter>
                 <Header />
                 <main>
                     <Routes>
@@ -19,7 +19,7 @@ function App() {
                     </Routes>
                 </main>
                 <Footer />
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
