@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const QuestionsPage = () => {
     const [answers, setAnswers] = useState({});
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleChange = (event) => {
         setAnswers({
@@ -15,9 +15,9 @@ const QuestionsPage = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (answers.time === 'no' || answers.space === 'no' || answers.money === 'no') {
-            navigate("/results?show=bad")
+            navigate('/ready-for-kitten/results?show=bad');
         } else {
-            navigate("/results?show=good")
+            navigate('/ready-for-kitten/results?show=good');
         }
     };
 
@@ -26,34 +26,50 @@ const QuestionsPage = () => {
             <h2>Are you ready for a kitten?</h2>
             <p>Please answer the following questions to find out:</p>
             <div>
+                <label>Do you have enough time to care for a kitten?</label>
+                <br />
                 <label>
-                    Do you have enough time to care for a kitten?
-                    <select name="time" onChange={handleChange}>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                    <input type="radio" name="time" value="yes" onChange={handleChange} />
+                    Yes
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="time" value="no" onChange={handleChange} />
+                    No
                 </label>
             </div>
             <div>
                 <label>
                     Do you have enough space in your home for a kitten?
-                    <select name="space" onChange={handleChange}>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="space" value="yes" onChange={handleChange} />
+                    Yes
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="space" value="no" onChange={handleChange} />
+                    No
                 </label>
             </div>
             <div>
                 <label>
                     Do you have enough money to provide for a kitten's needs?
-                    <select name="money" onChange={handleChange}>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="money" value="yes" onChange={handleChange} />
+                    Yes
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="money" value="no" onChange={handleChange} />
+                    No
                 </label>
             </div>
             <div>
-                <Link to="/">
+                <Link to="/ready-for-kitten/">
                     <button type="button">Back</button>
                 </Link>
                 <button type="submit">Submit</button>
