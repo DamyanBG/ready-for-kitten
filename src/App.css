@@ -38,3 +38,13 @@ footer {
   background-color: #333;
   color: white;
 }
+
+.question {
+  padding: 16px;
+}
+
+.question label:first-of-type {
+  display: inline-block;
+  color: rgb(6, 6, 41);
+  margin-bottom: 8px;
+}
