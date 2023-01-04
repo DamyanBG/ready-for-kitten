@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ready-for-kitten/static/css/main.0672e848.css",
+    "main.css": "/ready-for-kitten/static/css/main.c5f7854b.css",
     "main.js": "/ready-for-kitten/static/js/main.363391aa.js",
     "static/media/u3-cat-logo.png": "/ready-for-kitten/static/media/u3-cat-logo.3fd59211abf2a62a2997.png",
     "index.html": "/ready-for-kitten/index.html",
-    "main.0672e848.css.map": "/ready-for-kitten/static/css/main.0672e848.css.map",
+    "main.c5f7854b.css.map": "/ready-for-kitten/static/css/main.c5f7854b.css.map",
     "main.363391aa.js.map": "/ready-for-kitten/static/js/main.363391aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.0672e848.css",
+    "static/css/main.c5f7854b.css",
     "static/js/main.363391aa.js"
   ]
 }
